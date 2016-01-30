@@ -1,7 +1,7 @@
 
 function[y] = llvm(x)
 
-load llvm
+load llvm_data
 
 z = round(x(:))';
 

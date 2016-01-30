@@ -1,5 +1,5 @@
 
-function [ X, Y, PF, PV ] = main( method, obj_file, nInitial, nSamples, nIter, savefile )
+function [ X, Y, PF, PV ] = main( method, obj_file, nInitial, nSamples, nIter )
 
 rng('shuffle')
 
@@ -27,5 +27,5 @@ else
     exit
 end
 
-save( savefile, 'X', 'Y', 'PF', 'PV' );
+
 
