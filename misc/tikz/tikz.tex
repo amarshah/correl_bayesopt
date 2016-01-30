@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage{pgfplots,geometry}
+\geometry{margin=1mm}
+
+
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+
+ \newlength\figureheight 
+    \newlength\figurewidth 
+
+
+\begin{document}
+\input{obj1.tikz}
+\input{obj2.tikz}
+\newline
+\input{EIV_approx.tikz}
+\input{EIV_mcmc.tikz}
+ 
+\end{document}
