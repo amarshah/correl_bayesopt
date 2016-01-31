@@ -16,7 +16,7 @@ for t=1:length(tasks)
             part1 = 'qsub ';
             part2 = sprintf('-o /bigscratch/as793/multi_objective_bayesopt/%s/%s/out%d ', task, model, expt);
             part3 = sprintf('-e /bigscratch/as793/multi_objective_bayesopt/%s/%s/error%d ', task, model, expt);
-            part4 = sprintf('./shells/%s/%s/%d.sh', task, model, expt);
+            part4 = sprintf('./shells/%s/%s/v%d.sh', task, model, expt);
             
             fprintf(fid,'%s',part1);
             fprintf(fid,'%s',part2);
