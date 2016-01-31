@@ -3,6 +3,7 @@ function [ X, Y, PF, PV ] = main( method, obj_file, nInitial, nSamples, nIter, s
 
 rng('shuffle')
 
+addpath(genpath('./lightspeed'))
 addpath(genpath('./TPROD'))
 addpath('./utils')
 addpath(genpath('./objectives'))
