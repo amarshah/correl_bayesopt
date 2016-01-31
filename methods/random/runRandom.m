@@ -33,8 +33,8 @@ for iter=1:nIter
     
     %   find pareto volume based on noiseless objectives at probed locations
     [ F_cells, pareto ] = obs_to_integration_cells( F, lower, upper );    
-    pareto_volume(nIter+1)   = compute_pareto_volume( F_cells, lower, upper );
-    pareto_frontier{nIter+1} = pareto;
+    pareto_volume(iter)   = compute_pareto_volume( F_cells, lower, upper );
+    pareto_frontier{iter} = pareto;
 
     % choose new point 
     xnext = rand(1,D).*(xmax - xmin) + xmin;
