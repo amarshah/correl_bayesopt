@@ -1,5 +1,6 @@
 
-tasks  = {'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
+tasks  = {'gp_onequarter','gp_zero'};
+%{'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
 models = {'correl','indep','multitask','parego','random'};
 
 line1  = '#!/bin/sh';
