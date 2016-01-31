@@ -18,7 +18,7 @@ for t=1:length(tasks)
         model = models{m};
         for expt=1:50
             
-            savefile = sprintf('/bigsratch/as793/multi_objective_bayesopt/%s/%s/v%d.mat', task, model, expt);
+            savefile = sprintf('/bigscratch/as793/multi_objective_bayesopt/%s/%s/v%d.mat', task, model, expt);
             bash_save_file = sprintf('./%s/%s/v%d.sh', task, model, expt);
             unixstr2 = sprintf('"main( ''%s'', ''%s.mat'', %d, %d, %d, ''%s'')"', model, task, nInitial, nSamples, nIter, savefile);
 
