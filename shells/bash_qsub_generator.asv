@@ -1,0 +1,78 @@
+
+tasks   = {'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
+models  = {'indep','correl','multitask','parego','random'};
+
+
+for t=1:length(tasks)
+    task = tasks{t};
+    bash_file = sprintf('%s_bash.sh', task);
+    
+    fid = fopen(bash_save_file,'wt');
+    for expt=1:50
+        for m=1:length(models)
+            model = models{m};
+            unix = sprintf('./shells/%s/%s/%d.sh', task, model, expt);
+        
+            part1 = 'qsub ';
+            part2 = sprintf('-o /bigscratch/as793/multi_objective_bayesopt/%s/%s/out%d ', task, model, expt);
+            part3 = sprintf('-e /bigscratch/as793/multi_objective_bayesopt/%s/%s/error%d ', task, model, expt);
+            part4 = sprintf('./shells/%s/%s/%d.sh', task, model, expt);
+            
+            fprintf(fid,'%s',part1);
+            fprintf(fid,'%s',part2);
+            fprintf(fid,'%s',part3);
+            fprintf(fid,'%s',part4);
+
+
+
+
+fprintf(fid,'%s\n',line2);
+fprintf(fid,'%s\n',line3);
+fprintf(fid,'%s\n',line4);
+fprintf(fid,'%s',unixstr1);
+fprintf(fid,'%s',unixstr2);
+
+fclose(fid);
+
+
+
+
+
+tasks  = {'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
+models = {'correl','indep','multitask','parego','random'};
+
+line1  = '#!/bin/sh';
+line2  = '#';
+line3  = '#$ -S /bin/bash';
+line4  = '#';
+unixstr1 = '/usr/local/apps/matlab/matlabR2011b/bin/matlab - nodisplay -r ';
+
+nInitial = 5;
+nSamples = 8;
+nIter    = 100;
+
+for t=1:length(tasks)
+    task  = tasks{t};
+    for m=1:length(models)
+        model = models{m};
+        for expt=1:50
+            
+            savefile = sprintf('/bigsratch/as793/multi_objective_bayesopt/%s/%s/%d.mat', task, model, expt);
+            bash_save_file = sprintf('./%s/%s/%d.sh', task, model, expt);
+            unixstr2 = sprintf('"main( ''%s'', ''%s.mat'', %d, %d, %d, ''%s'')', model, task, nInitial, nSamples, nIter, savefile);
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            fid = fopen(bash_save_file,'wt');
+
+            fprintf(fid,'%s\n',line1);
+            fprintf(fid,'%s\n',line2);
+            fprintf(fid,'%s\n',line3);
+            fprintf(fid,'%s\n',line4);
+            fprintf(fid,'%s',unixstr1);
+            fprintf(fid,'%s',unixstr2);
+
+            fclose(fid);
+        end
+    end
+end
