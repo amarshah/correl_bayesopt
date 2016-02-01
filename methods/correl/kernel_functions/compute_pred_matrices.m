@@ -21,7 +21,7 @@ K11invYminusmean  = K11inv*Yminusmean;
 K11invK12         = K11inv*K12;
 Kpred             = K22 - K12'*K11invK12;
 
-C            = chol(Kpred);
+C            = cholproj(Kpred);
 Kpredinv     = solve_chol(C,eye(R));
 logdetKpred  = 2*sum(log(diag(C)));
 

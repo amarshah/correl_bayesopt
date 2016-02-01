@@ -15,9 +15,8 @@ for i=1:1024
     end
 end
 
-
 if found == 0
-    perf=11;
+    perf=lower_;
     negmem=0;
 end
 y = [perf, negmem]';

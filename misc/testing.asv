@@ -136,7 +136,7 @@ figure
 plot(Xall, IV, 'k')
 
 figure
-plot(Xall, exp(4*log_EIV_indep), 'r', Xall, exp(log_EIV_correl), 'g')
+plot(Xall, exp(log_EIV_indep, 'r', Xall, log_EIV_correl, 'g')
 % figure
 % plot(Xall, log_EIV_correl_MCMC, 'b')
 

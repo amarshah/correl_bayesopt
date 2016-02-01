@@ -1,4 +1,4 @@
-function p = normcdf(x,m,s)
+function p = normcdf2(x,m,s)
 %NORMCDF   Normal Cumulative Density Function.
 % P = NORMCDF(X) returns the probability that a standard normal variate will
 % be less than X.
