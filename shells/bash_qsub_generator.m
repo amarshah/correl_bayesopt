@@ -1,5 +1,5 @@
 
-tasks   = {'gp_onequarter','gp_zero'};
+tasks   = {'llvm','dtlz1a'};
 %{'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
 models  = {'indep','correl','multitask','parego','random'};
 
