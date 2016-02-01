@@ -1,5 +1,5 @@
 
-tasks   = {'llvm','dtlz1a'};
+tasks   = {'boston'};
 %{'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
 models  = {'indep','correl','multitask','parego','random'};
 
