@@ -1,7 +1,7 @@
 
-tasks  = {'oka2'};
+tasks  = {'llvm'};
 %{'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
-models = {'correl','indep'};
+models = {'correl','multitask'};
 %{'correl','indep','multitask','parego','random'};
 
 line1  = '#!/bin/sh';

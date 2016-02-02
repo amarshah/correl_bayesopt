@@ -23,7 +23,7 @@ logdetKGpred = R*log(Kpred) + log(det(G));
 mpred     = (Y-mean)'*K11invK12 + mean;     % Rx1   
 
 Sigmainv     = KGpredinv + diag(1./tau);   % RxR
-C            = chol(Sigmainv);
+C            = chol(Sigmainv + 1e-5*diag(diag(Sigmainv)));
 Sigma        = solve_chol(C,eye(R));
 logdetSigma  = -2*sum(log(diag(C)));           
 
