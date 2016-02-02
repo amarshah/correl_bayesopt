@@ -23,7 +23,7 @@ end
 Np = size(pareto_points, 1);
 for np=1:Np-1
     p_point = pareto_points(np, :);
-    difs2   = repmat(pareto_points,Np-np,1);
+    difs2   = repmat(p_point,Np-np,1) - pareto_points(np+1:Np, :);
     difs2   = sum(difs2.*difs2, 2);
     if min(difs2) < 1e-6
         pareto_points(np, :) = [];
