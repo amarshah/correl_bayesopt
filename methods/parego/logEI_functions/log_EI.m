@@ -22,7 +22,11 @@ dpdf_z = -z * dcdf_z;
 dg = (m_pred - ybest)*dcdf_z + dm_pred*cdf_z ...
         + dstd_pred*pdf_z + std_pred*dpdf_z;
 
- f = log(g);
-df = dg / g;
-
+if g<0
+     f = 0; 
+    df = zeros(size(dg)); 
+else    
+     f = log(g);
+    df = dg / (g+1e-10);
+end
 

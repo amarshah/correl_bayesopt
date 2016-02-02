@@ -16,7 +16,10 @@ function [ optimum ] = globalOptimization(target_noderiv, target, xmin, xmax)
 	[ minValue minIndex ] = min(y);
 
 	start = Xgrid(minIndex,:);
-
+    
+    eps = 0.5*(xmax + xmin) - start;
+    start = start + 1e-5*eps;
+    
 	% We optimize starting at the best location
 
 	optimum = fmincon(target, start, [], [], [], [], xmin, xmax, [], ...

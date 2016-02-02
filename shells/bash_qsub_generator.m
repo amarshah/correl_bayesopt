@@ -1,7 +1,8 @@
 
-tasks   = {'vlmop3'};
+tasks   = {'boston'};
 %{'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
-models  = {'indep','correl','multitask','parego','random'};
+models  = {'indep','correl','multitask'};
+%{'indep','correl','multitask','parego','random'};
 
 
 for t=1:length(tasks)

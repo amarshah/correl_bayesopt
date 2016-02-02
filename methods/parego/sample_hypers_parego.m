@@ -49,7 +49,7 @@ for ns=1:nsamples
        
     ls_samples{ns}  = exp(samples(ns,2:D+1));
 
-    nvar_samples{ns} = exp(samples(ns,D+2));    
+    nvar_samples{ns} = max(exp(samples(ns,D+2)), 1e-6);    
     
     mean_samples{ns} = samples(ns,D+3);    
     

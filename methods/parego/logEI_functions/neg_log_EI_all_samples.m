@@ -13,6 +13,10 @@ for ns=1:nsamples
     K22inv  = K22inv_samples{ns};
     
     [ g, dg ] = log_EI( xstar, X, Y, amp, ls, nvar, K22inv );
+    
+    if isreal(g)==0
+       g; 
+    end
 
     f =  f -  g;
     df = df - dg;

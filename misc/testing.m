@@ -23,12 +23,20 @@ nIter = 1;
 x = [0.07, 0.14, 0.41, 0.59, 0.825, 0.95, 1]';% 0.612,
 y = obj(x)';
 
-plot(Xall, g1(Xall-0.015), Xall, f5(Xall-0.015))
-hold on 
-scatter(x, y(:,1), 'x', 'LineWidth', 1.5, 'MarkerEdgeColor', 'k')
-scatter(x, y(:,2), 'x', 'LineWidth', 1.5, 'MarkerEdgeColor', 'k')
-%scatter(x, y(:,3), 'x', 'LineWidth', 1.5, 'MarkerEdgeColor', 'k')
+figure
+hold on
+plot(Xall, g1(Xall-0.015),'LineWidth',1.1,'Color',[0.45 0.45 0.7]); 
+plot(Xall, f5(Xall-0.015),'LineWidth',1.1,'Color',[0.3 0.3 1]);
+scatter(x, y(:,1), 'k', 's', 'MarkerFaceColor','k')%, 'MarkerEdgeColor', 'k')
+scatter(x, y(:,2), 'k', 's', 'MarkerFaceColor','k')%, 'MarkerEdgeColor', 'k')
 hold off
+xlabel('$\mathcal{X}$','Interpreter','LaTex')
+set(gca,'XTick',0:0.2:1)
+set(gca,'XTickLabel',{'0','0.2','0.4','0.6','0.8','1'})
+matlab2tikz('objectives.tikz','height','70mm','width','50mm')
+
+
+
 init_y = y;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,10 +141,21 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 figure
-plot(Xall, IV, 'k')
-
-figure
-plot(Xall, exp(4*log_EIV_indep), 'r', Xall, exp(log_EIV_correl), 'g')
+hold on
+plot(Xall, 6*10^3*exp(log_EIV_correl),'LineWidth',1.1,'Color',[0.9 0 0.1]);
+plot(Xall, 5*10^3*exp(3.7*log_EIV_indep),'LineWidth',1.1,'Color',[0 0.8 0.2]);
+plot(Xall, IV,'--','LineWidth',1.1,'Color',[0 0 0]);
+ylim([0 0.3]); 
+xlim([0 1]); 
+legend({'CEIPV','IEIPV','IPV'},'Position',[0.375,0.775,0.1,0.1]);
+set(gca,'XTick',0:0.2:1)
+set(gca,'XTickLabel',{'0','0.2','0.4','0.6','0.8','1'})
+set(gca,'YTick',0:0.1:0.3)
+set(gca,'YTickLabel',{'0','0.1','0.2','0.3'})
+xlabel('$\mathcal{X}$','Interpreter','LaTex')
+ylabel('Increase in Pareto Volume')
+matlab2tikz('IV_compare.tikz','height','70mm','width','50mm')
+ 
 % figure
 % plot(Xall, log_EIV_correl_MCMC, 'b')
 

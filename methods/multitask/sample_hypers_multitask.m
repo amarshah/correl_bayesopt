@@ -57,7 +57,7 @@ for ns=1:nsamples
        
     ls_samples{ns} = exp(reshape(samples(ns,R*(R+1)/2+1:R*(R+1)/2+D),1,D));
 
-    nvar_samples{ns} = exp(samples(R*(R+1)/2+D+1));    
+    nvar_samples{ns} = max(exp(samples(R*(R+1)/2+D+1)),1e-6);    
     
     mean_samples{ns} = samples(R*(R+1)/2+D+2);    
     

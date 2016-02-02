@@ -15,7 +15,10 @@ ybest = max(Y);
 
  g = (m_pred - ybest)*cdf_z + std_pred*pdf_z;
 
- f = log(g);
-
+if g<0
+    f = 0;
+else    
+    f = log(g);
+end
 
 

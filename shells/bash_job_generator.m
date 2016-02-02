@@ -1,7 +1,8 @@
 
-tasks  = {'vlmop3'};
+tasks  = {'boston'};
 %{'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
-models = {'correl','indep','multitask','parego','random'};
+models = {'correl','indep','multitask'};
+%{'correl','indep','multitask','parego','random'};
 
 line1  = '#!/bin/sh';
 line2  = '#';

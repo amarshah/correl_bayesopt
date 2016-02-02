@@ -28,7 +28,7 @@ logdetKpred  = 2*sum(log(diag(C)));
 mpred     = K11invK12'*Yminusmean + mean';  % R x 1
 
 Sigmainv     = Kpredinv + diag(1./tau);
-C            = chol(Sigmainv);
+C            = cholproj(Sigmainv);
 Sigma        = solve_chol(C,eye(R));
 logdetSigma  = -2*sum(log(diag(C)));
 
