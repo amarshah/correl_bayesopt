@@ -60,7 +60,7 @@ for ns=1:nsamples
      p = exp(logEIV_cells - g);                  % ncells x 1
     dg = sum(bsxfun(@times, p, dlogEIV_cells));  % 1 x D  
     
-     logEIV_ns(ns)    =  g
+     logEIV_ns(ns)    =  g;
     dlogEIV_ns(ns, :) = dg;
     
 end
