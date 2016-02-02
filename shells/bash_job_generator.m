@@ -1,14 +1,14 @@
 
-tasks  = {'gp_threequarters','gp_minushalf','gp_onequarter','gp_zero'};
+tasks  = {'oka2'};
 %{'oka2','dtlz1a','gp_threequarters','gp_minushalf'};
-models = {'parego'};
+models = {'correl','indep'};
 %{'correl','indep','multitask','parego','random'};
 
 line1  = '#!/bin/sh';
 line2  = '#';
 line3  = '#$ -S /bin/bash';
 line4  = '#';
-unixstr1 = '/usr/local/apps/matlab/matlabR2011b/bin/matlab - nodisplay -r ';
+unixstr1 = '/usr/local/apps/matlab/matlabR2013a/bin/matlab - nodisplay -r ';
 
 nInitial = 5;
 nSamples = 8;

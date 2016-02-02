@@ -61,31 +61,3 @@ dlogEIV  = -0.5*(mpreddKGpred+2*dmpredKGpredinv)*mpred ...
            +0.5*dlogdetSigma;   % D x 1
            
       
-
-     
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% for d=1:D  
-%     dK12   = alldK12(:,:,d);
-%     
-%     dmpred = dK12'*K11invY;
-%     dKpred = -dK12'*K11invK12-K11invK12'*dK12;
-%     
-%     dKpredinv = -Kpredinv*dKpred*Kpredinv; 
-%     dSigmainv = dKpredinv;
-%     
-%     dlogdetKpred = sum(sum(Kpredinv.*dKpred'));
-%     dlogdetSigma = -sum(sum(Sigma.*dSigmainv'));
-%    
-%     dlambda = SigmaKpredinv*dKpred*SigmaKpredinv'*(Kpredinvmpred+mu./tau) + ...
-%               Sigma*(dKpredinv*mpred+Kpredinv*dmpred);
-%               
-%     dlogEIV(d) = - 0.5*((mpred'*dKpredinv+ 2*dmpred'*Kpredinv)*mpred + dlogdetKpred) ...
-%                  + 0.5*((lambda'*dSigmainv + 2*dlambda'*Sigmainv)*lambda + dlogdetSigma);
-%              
-% end
-%   
-%       
-
-
-
-
