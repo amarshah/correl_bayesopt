@@ -50,15 +50,19 @@ for ns=1:nsamples
 
          logEIV_cells(s)   =  g;
         dlogEIV_cells(s,:) = dg; 
+
+        if isnan(g)
+            g
+        end
     end
 
      g = logsumexp(logEIV_cells);                % scalar
      p = exp(logEIV_cells - g);                  % ncells x 1
     dg = sum(bsxfun(@times, p, dlogEIV_cells));  % 1 x D  
     
-     logEIV_ns(ns)    =  g;
+     logEIV_ns(ns)    =  g
     dlogEIV_ns(ns, :) = dg;
-
+    
 end
 
  logEIV = logsumexp(logEIV_ns) - log(nsamples);      % scalar

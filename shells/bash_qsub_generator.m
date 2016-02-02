@@ -1,7 +1,7 @@
 
-tasks   = {'oka2'};
+tasks  = {'gp_threequarters','gp_minushalf','gp_onequarter','gp_zero'};
 %{'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
-models  = {'indep','correl'};
+models  = {'parego'};
 %{'indep','correl','multitask','parego','random'};
 
 

@@ -78,7 +78,7 @@ for ns=1:nsamples
         
         K21s(:,:,r) = K - nvar*eye(N);
         
-        C          = cholproj(K);
+        C          = cholp(K);
         K22invs(:,:,r) = solve_chol(C,eye(N));
     end
     

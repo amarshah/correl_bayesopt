@@ -36,6 +36,7 @@ Yminusmean = Y - bsxfun(@times, ones(N,1), mean);
 dvar_pred  = - tprod(K22invdK21,[-1,1,2],K21,[-1,2]) ...
              - tprod(tprod(K22invs,[-1,1,3],dK21,[-1,2,3]),[-1,1,2],K21,[-1,2]);    % D x R
 
+  var_pred = max(var_pred, 1e-8);
 %(K21'*K22invdK21)' - K22invdK21'*K21;  % Dx1
 
 

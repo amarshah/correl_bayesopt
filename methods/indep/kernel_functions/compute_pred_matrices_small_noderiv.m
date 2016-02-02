@@ -26,6 +26,8 @@ Yminusmean = Y - bsxfun(@times, ones(N,1), mean);
     m_pred = sum(Yminusmean.*K22invK21)' + mean';  % R x 1
   var_pred = amp' - sum(K21.*K22invK21)';  % R x 1
  
+  var_pred = max(var_pred, 1e-8);
+  
 
 
 
