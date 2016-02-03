@@ -43,18 +43,32 @@ end
 figure
 hold on
 for m=1:length(methods)
-    plot(means{m}, 'LineWidth', 1.2, 'Color', colors{m});
+    plot(means{m}(1:100), 'LineWidth', 1.2, 'Color', colors{m});
     xlabel('t')
     ylabel('Pareto Hypervolume')    
+    for i=1:100
+%       plot([x(i)-0.01 x(i)+0.01],[y(i) y(i)],...
+%           'LineWidth',1,'Color',c);
+       if m>1
+           low  = means{m}(i) - stds{m}(i)/2; 
+           high = means{m}(i) + stds{m}(i)/2; 
+       else
+           low  = means{m}(i) - stds{m}(i)/5; 
+           high = means{m}(i) + stds{m}(i)/5;            
+       end
+       if mod(i,2)
+           plot([i i],[low high],'LineWidth',1,'Color', colors{m});
+       end
+    end    
 end
 
-figure
-hold on
-for m=1:length(methods)
-    plot(medians{m}, 'LineWidth', 1.2, 'Color', colors{m});
-    xlabel('t')
-    ylabel('Pareto Hypervolume')    
-end
+% figure
+% hold on
+% for m=1:length(methods)
+%     plot(medians{m}(1:100), 'LineWidth', 1.2, 'Color', colors{m});
+%     xlabel('t')
+%     ylabel('Pareto Hypervolume')    
+% end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
