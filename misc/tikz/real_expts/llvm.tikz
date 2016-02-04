@@ -1,0 +1,1322 @@
+% This file was created by matlab2tikz v0.3.0.
+% Copyright (c) 2008--2012, Nico Schlömer <nico.schloemer@gmail.com>
+% All rights reserved.
+% 
+% The latest updates can be retrieved from
+%   http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz
+% where you can also make suggestions and rate matlab2tikz.
+% 
+% 
+% 
+
+% defining custom colors
+\definecolor{mycolor1}{rgb}{0.9,0,0.1}
+\definecolor{mycolor2}{rgb}{0,0.8,0.2}
+\definecolor{mycolor3}{rgb}{1,0.8,0.3}
+\definecolor{mycolor4}{rgb}{0.5,0.6,1}
+\definecolor{mycolor5}{rgb}{0.85,0.35,0.8}
+
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=55mm,
+height=65mm,
+scale only axis,
+xmin=0, xmax=100,
+xlabel={t},
+ymin=1.5, ymax=4,
+ylabel={Pareto Hypervolume},
+axis lines*=left,
+unbounded coords=jump]
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (10,1.5)(10,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (20,1.5)(20,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (30,1.5)(30,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (40,1.5)(40,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (50,1.5)(50,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (60,1.5)(60,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (70,1.5)(70,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (80,1.5)(80,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (90,1.5)(90,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (100,1.5)(100,4) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (0,2)(100,2) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (0,2.5)(100,2.5) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (0,3)(100,3) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (0,3.5)(100,3.5) 
+};
+\addplot [
+color=white!80!black,
+solid,
+forget plot
+]
+coordinates{
+ (0,4)(100,4) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.2pt,
+forget plot
+]
+coordinates{
+ (1,2.13026059444445)(2,2.57902032222222)(3,2.586)(4,2.71)(5,2.88)(6,2.94195693888889)(7,2.93633596111111)(8,3.01)(9,3.03)(10,3.02901252222222)(11,3.041)(12,3.03929014444444)(13,3.09002201666667)(14,3.10941049444444)(15,3.14119804444444)(16,3.13429323333333)(17,3.1511002)(18,3.17491643333333)(19,3.16857355)(20,3.19100927222222)(21,3.18106742777778)(22,3.20475521111111)(23,3.20625158888889)(24,3.19666179444444)(25,3.22934691111111)(26,3.23685756111111)(27,3.25980834444444)(28,3.24581086666667)(29,3.2740444)(30,3.27101975555556)(31,3.29288040555555)(32,3.30068401666666)(33,3.3100523)(34,3.30318968888889)(35,3.30652006666666)(36,3.28766976111111)(37,3.31545335555555)(38,3.33236647777778)(39,3.33558102222222)(40,3.34888656111111)(41,3.35086368333333)(42,3.35624532777778)(43,3.35403627777778)(44,3.36656451666666)(45,3.36470493333333)(46,3.36602329444444)(47,3.34989653333333)(48,3.34978157777778)(49,3.37780273333333)(50,3.37724217777778)(51,3.40660815)(52,3.40519206111111)(53,3.4103787)(54,3.41242027222222)(55,3.4102624)(56,3.39879080555556)(57,3.38385034444445)(58,3.39480927777778)(59,3.39575887777778)(60,3.37109982222222)(61,3.37113459444445)(62,3.37304903888889)(63,3.42758241666667)(64,3.42663740555556)(65,3.43256288333333)(66,3.41097153333333)(67,3.41666105555556)(68,3.4184084)(69,3.40989345)(70,3.41138243333333)(71,3.41248503333334)(72,3.41997867777778)(73,3.41999822777778)(74,3.44279227777778)(75,3.44256707777778)(76,3.43985984444445)(77,3.4427136)(78,3.44163303333333)(79,3.44062853333333)(80,3.44080851666667)(81,3.44220226111111)(82,3.44406371666667)(83,3.44414383888889)(84,3.44010528333334)(85,3.44026541666667)(86,3.4502414)(87,3.49984553888889)(88,3.50229878333334)(89,3.49954325555556)(90,3.49888402777778)(91,3.50682507222222)(92,3.50820796666667)(93,3.53165476111111)(94,3.54094857222222)(95,3.53579917222222)(96,3.54498604444445)(97,3.54419139444445)(98,3.54323463888889)(99,3.54179273888889)(100,3.54105476666667) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (4,2.42811748050116)(4,2.99188251949884) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (8,2.74331196353966)(8,3.27668803646034) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (12,2.78006920083869)(12,3.2985110880502) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (16,2.89993125946313)(16,3.36865520720353) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (20,2.95052770691417)(20,3.43149083753028) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (24,2.98397860164156)(24,3.40934498724733) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (28,3.05268133480232)(28,3.43894039853102) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (32,3.10451117639767)(32,3.49685685693566) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (36,3.09353743397588)(36,3.48180208824634) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (40,3.15481339713589)(40,3.54295972508633) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (44,3.18281289635292)(44,3.55031613698041) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (48,3.20240384445479)(48,3.49715931110076) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (52,3.25884056882524)(52,3.55154355339698) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (56,3.25492862225789)(56,3.54265298885322) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (60,3.23337906297614)(60,3.50882058146831) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (64,3.29352058327773)(64,3.55975422783338) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (68,3.2886531178441)(68,3.5481636821559) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (72,3.28988551639083)(72,3.55007183916473) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (76,3.31206741378903)(76,3.56765227509986) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (80,3.32271983359925)(80,3.55889719973408) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (84,3.31940404150568)(84,3.56080652516099) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (88,3.38943479765071)(88,3.61516276901597) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (92,3.40134063707856)(92,3.61507529625478) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (96,3.43767877150483)(96,3.65229331738407) 
+};
+\addplot [
+color=mycolor1,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (100,3.43885403286528)(100,3.64325550046805) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.2pt,
+forget plot
+]
+coordinates{
+ (1,1.66350198412698)(2,1.82696296296296)(3,1.88123478835979)(4,1.8968835978836)(5,1.95861970899471)(6,2.00667394179894)(7,2.08281150793651)(8,2.10473015873016)(9,2.16206746031746)(10,2.20753373015873)(11,2.2485582010582)(12,2.28239153439153)(13,2.33786507936508)(14,2.37968915343915)(15,2.52900727513228)(16,2.51454894179894)(17,2.54603373015873)(18,2.54907671957672)(19,2.59060978835979)(20,2.62980753968254)(21,2.6839914021164)(22,2.74404431216931)(23,2.76439880952381)(24,2.82016666666667)(25,2.82823941798942)(26,2.83559391534392)(27,2.92938227513228)(28,2.97054166666667)(29,2.99492063492063)(30,3.01423082010582)(31,3.0312791005291)(32,3.07688293650794)(33,3.08425132275132)(34,3.08554761904762)(35,3.10506481481481)(36,3.12857341269841)(37,3.13544312169312)(38,3.14344047619048)(39,3.12380753968254)(40,3.14164748677249)(41,3.15228439153439)(42,3.15577380952381)(43,3.18013756613757)(44,3.1826335978836)(45,3.19275264550264)(46,3.19860582010582)(47,3.20131415343915)(48,3.21369775132275)(49,3.17258399470899)(50,3.17881547619048)(51,3.20107473544973)(52,3.20536441798942)(53,3.21115740740741)(54,3.22912169312169)(55,3.22930952380952)(56,3.17345502645503)(57,3.16740939153439)(58,3.16072619047619)(59,3.24484325396825)(60,3.2462962962963)(61,3.21949404761905)(62,3.2218835978836)(63,3.22411111111111)(64,3.2292585978836)(65,3.22830158730159)(66,3.22910846560847)(67,3.24232473544974)(68,3.24384457671958)(69,3.24568849206349)(70,3.2729794973545)(71,3.28602645502646)(72,3.29126851851852)(73,3.29249074074074)(74,3.29280621693122)(75,3.35012566137566)(76,3.35424206349207)(77,3.38211772486773)(78,3.37883664021164)(79,3.33749867724868)(80,3.3386335978836)(81,3.34031613756614)(82,3.33470105820106)(83,3.33816137566138)(84,3.35211044973545)(85,3.35202116402117)(86,3.32589814814815)(87,3.29506613756614)(88,3.29511375661376)(89,3.29511375661376)(90,3.28608201058201)(91,3.28608201058201)(92,3.29018253968254)(93,3.29018253968254)(94,3.29329828042328)(95,3.31916732804233)(96,3.32191865079365)(97,3.32261507936508)(98,3.31922619047619)(99,3.31991666666667)(100,3.31991666666667) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (4,1.50960547968195)(4,2.28416171608525) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (8,1.71125208132764)(8,2.49820823613268) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (12,1.90733777530807)(12,2.657445293475) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (16,2.22540151645736)(16,2.80369636714052) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (20,2.36943530741293)(20,2.89017977195215) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (24,2.56759838074845)(24,3.07273495258488) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (28,2.74696565111717)(28,3.19411768221616) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (32,2.89430752955657)(32,3.2594583434593) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (36,2.94215460188393)(36,3.3149922235129) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (40,2.94539030325821)(40,3.33790467028677) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (44,2.99994990471719)(44,3.36531729105001) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (48,3.03156732228928)(48,3.39582818035622) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (52,2.99077740353466)(52,3.41995143244418) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (56,2.9297512678498)(56,3.41715878506025) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (60,3.01636903567915)(60,3.47622355691344) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (64,2.98873225722334)(64,3.46978493854386) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (68,3.00395486444866)(68,3.4837342889905) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (72,3.07783200301689)(72,3.50470503402015) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (76,3.17742853385509)(76,3.53105559312904) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (80,3.14873921198223)(80,3.52852798378497) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (84,3.16509756761225)(84,3.53912333185866) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (88,3.07944706061793)(88,3.51078045260959) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (92,3.07483549949821)(92,3.50552957986687) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (96,3.12070063351191)(96,3.5231366680754) 
+};
+\addplot [
+color=mycolor2,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (100,3.11851983600697)(100,3.52131349732636) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.2pt,
+forget plot
+]
+coordinates{
+ (1,2.05706444444444)(2,2.34567277777778)(3,2.51777888888889)(4,2.57216611111111)(5,2.66684833333333)(6,2.70853222222222)(7,2.74278222222222)(8,2.76819277777778)(9,2.84712777777778)(10,2.85548055555556)(11,2.87652333333333)(12,2.90741388888889)(13,2.94599111111111)(14,2.97558722222222)(15,3.00317944444444)(16,3.02468388888889)(17,3.04335111111111)(18,3.06033611111111)(19,3.06937444444444)(20,3.08587944444444)(21,3.09188111111111)(22,3.11021111111111)(23,3.11109666666667)(24,3.11640111111111)(25,3.13318055555556)(26,3.14264722222222)(27,3.15476277777778)(28,3.15680611111111)(29,3.17335722222222)(30,3.17335722222222)(31,3.18582888888889)(32,3.18984944444444)(33,3.20257722222222)(34,3.20333777777778)(35,3.20493277777778)(36,3.20649444444444)(37,3.223095)(38,3.23225)(39,3.23509722222222)(40,3.24733888888889)(41,3.24960444444444)(42,3.253445)(43,3.25825611111111)(44,3.26446666666667)(45,3.266)(46,3.26647)(47,3.26758222222222)(48,3.26758222222222)(49,3.28157777777778)(50,3.28264444444444)(51,3.29735888888889)(52,3.29901222222222)(53,3.30242277777778)(54,3.30897166666667)(55,3.311025)(56,3.31238777777778)(57,3.31495722222222)(58,3.32042888888889)(59,3.32186555555556)(60,3.32210888888889)(61,3.32210888888889)(62,3.32306611111111)(63,3.35091166666667)(64,3.35145166666667)(65,3.35431722222222)(66,3.35837444444444)(67,3.36130055555556)(68,3.36222222222222)(69,3.36222222222222)(70,3.36323111111111)(71,3.36378111111111)(72,3.3676)(73,3.3676)(74,3.38006)(75,3.38035666666667)(76,3.38080611111111)(77,3.38221166666667)(78,3.38221166666667)(79,3.38265833333333)(80,3.38265833333333)(81,3.38333166666667)(82,3.38425888888889)(83,3.38434222222222)(84,3.38439222222222)(85,3.38446555555556)(86,3.39155944444445)(87,3.41634444444445)(88,3.41799)(89,3.41799)(90,3.41799)(91,3.42210333333333)(92,3.42282)(93,3.43661944444444)(94,3.44156444444444)(95,3.44175777777778)(96,3.44697444444444)(97,3.44711055555556)(98,3.44716722222222)(99,3.44730333333333)(100,3.44760333333333) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (4,2.26164290000437)(4,2.88268932221785) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (8,2.4670039833811)(8,3.06938157217446) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (12,2.61162954658616)(12,3.20319823119161) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (16,2.75899909831288)(16,3.2903686794649) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (20,2.81077997439265)(20,3.36097891449624) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (24,2.87599980354856)(24,3.35680241867366) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (28,2.93869391453566)(28,3.37491830768656) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (32,2.96716707729667)(32,3.41253181159222) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (36,2.9861633509913)(36,3.42682553789759) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (40,3.02570220762859)(40,3.46897557014919) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (44,3.05590837371172)(44,3.47302495962161) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (48,3.10433313199072)(48,3.43083131245372) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (52,3.13574988753679)(52,3.46227455690765) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (56,3.15268989271812)(56,3.47208566283744) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (60,3.16989982845564)(60,3.47431794932214) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (64,3.20373672641475)(64,3.49916660691858) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (68,3.21857691058377)(68,3.50586753386068) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (72,3.22343142905493)(72,3.51176857094507) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (76,3.23872511866458)(76,3.52288710355764) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (80,3.25267278233501)(80,3.51264388433166) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (84,3.25094930967503)(84,3.51783513476942) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (88,3.29286657054772)(88,3.54311342945228) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (92,3.30517490717035)(92,3.54046509282965) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (96,3.32750364981009)(96,3.5664452390788) 
+};
+\addplot [
+color=mycolor3,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (100,3.334545595955)(100,3.56066107071167) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.2pt,
+forget plot
+]
+coordinates{
+ (1,2.00249388888889)(2,2.13296888888889)(3,2.25649444444444)(4,2.31473444444444)(5,2.408795)(6,2.49830333333333)(7,2.57334166666667)(8,2.63326388888889)(9,2.66862333333333)(10,2.70729388888889)(11,2.79364833333333)(12,2.80139)(13,2.82801777777778)(14,2.86790833333333)(15,2.89183555555556)(16,2.94190611111111)(17,2.96258777777778)(18,2.97291611111111)(19,2.99744222222222)(20,3.00823166666667)(21,3.03049444444444)(22,3.04384388888889)(23,3.04427166666667)(24,3.06477833333333)(25,3.06598277777778)(26,3.07773388888889)(27,3.07913388888889)(28,3.09767833333333)(29,3.10272)(30,3.10585777777778)(31,3.10897277777778)(32,3.10927777777778)(33,3.125405)(34,3.13395444444445)(35,3.13395444444445)(36,3.15597277777778)(37,3.16163444444445)(38,3.16304)(39,3.16569166666667)(40,3.17688944444445)(41,3.17962388888889)(42,3.18205222222222)(43,3.19395222222222)(44,3.19404944444444)(45,3.19901555555556)(46,3.19901555555556)(47,3.21754444444444)(48,3.21783166666667)(49,3.21783166666667)(50,3.22052555555556)(51,3.22058944444444)(52,3.22531666666667)(53,3.22700944444444)(54,3.23809944444444)(55,3.244375)(56,3.258625)(57,3.27875944444444)(58,3.27875944444444)(59,3.28068777777778)(60,3.30586777777778)(61,3.30586777777778)(62,3.30586777777778)(63,3.30705111111111)(64,3.30917111111111)(65,3.30917111111111)(66,3.33889444444444)(67,3.33906444444444)(68,3.33916333333333)(69,3.34774277777778)(70,3.34839666666667)(71,3.34839666666667)(72,3.34856333333333)(73,3.34856333333333)(74,3.35079277777778)(75,3.35164611111111)(76,3.35526111111111)(77,3.35526111111111)(78,3.35635333333333)(79,3.35825333333333)(80,3.35825333333333)(81,3.35825333333333)(82,3.35825333333333)(83,3.35834055555556)(84,3.36255222222222)(85,3.36255222222222)(86,3.36676444444444)(87,3.36676444444444)(88,3.36770944444444)(89,3.37048388888889)(90,3.37119055555555)(91,3.37147777777778)(92,3.37164888888889)(93,3.37580888888889)(94,3.37644444444444)(95,3.38198222222222)(96,3.38330444444444)(97,3.38438666666667)(98,3.38549222222222)(99,3.38721111111111)(100,3.38862944444444) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (4,1.9968269136167)(4,2.63264197527219) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (8,2.3887623799304)(8,2.87776539784738) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (12,2.58675203724607)(12,3.01602796275393) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (16,2.73467176772189)(16,3.14914045450033) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (20,2.81441276863381)(20,3.20205056469953) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (24,2.87133793918128)(24,3.25821872748539) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (28,2.92060047459539)(28,3.27475619207128) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (32,2.93802178554544)(32,3.28053377001012) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (36,2.98623198023702)(36,3.32571357531854) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (40,3.01763316425814)(40,3.33614572463075) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (44,3.03345207792144)(44,3.35464681096745) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (48,3.0584362858577)(48,3.37722704747564) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (52,3.07577123356019)(52,3.37486209977314) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (56,3.10563818512561)(56,3.41161181487439) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (60,3.15430942423266)(60,3.45742613132289) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (64,3.1671948453863)(64,3.45114737683592) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (68,3.19819252130452)(68,3.48013414536214) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (72,3.2083594393399)(72,3.48876722732677) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (76,3.22104856247823)(76,3.48947365974399) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (80,3.22430103178014)(80,3.49220563488652) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (84,3.23005656021819)(84,3.49504788422625) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (88,3.24643964429681)(88,3.48897924459208) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (92,3.25051196330715)(92,3.49278581447063) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (96,3.27186339073912)(96,3.49474549814976) 
+};
+\addplot [
+color=mycolor4,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (100,3.27696127740665)(100,3.50029761148224) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.2pt,
+forget plot
+]
+coordinates{
+ (1,1.86255944444444)(2,2.06436555555556)(3,2.20475277777778)(4,2.27244444444444)(5,2.29653055555555)(6,2.31958277777778)(7,2.41131833333333)(8,2.47099166666667)(9,2.49268833333333)(10,2.53453)(11,2.55908944444444)(12,2.58523666666667)(13,2.60575722222222)(14,2.61443833333333)(15,2.66747111111111)(16,2.68315666666667)(17,2.69857555555556)(18,2.71603222222222)(19,2.72668833333333)(20,2.748205)(21,2.779965)(22,2.81768777777778)(23,2.83299222222222)(24,2.86379055555556)(25,2.89685777777778)(26,2.92970055555556)(27,2.94166777777778)(28,2.98769777777778)(29,3.00499555555556)(30,3.01630888888889)(31,3.01954055555556)(32,3.02629055555556)(33,3.03028555555556)(34,3.04685777777778)(35,3.06089555555556)(36,3.065365)(37,3.08978)(38,3.09064777777778)(39,3.10782444444444)(40,3.10982277777778)(41,3.12786833333333)(42,3.140755)(43,3.14762777777778)(44,3.16806277777778)(45,3.17204888888889)(46,3.209885)(47,3.22765333333333)(48,3.24488)(49,3.24788444444444)(50,3.24788444444444)(51,3.24798166666667)(52,3.24842833333333)(53,3.25425888888889)(54,3.25763833333333)(55,3.25874)(56,3.264025)(57,3.26953444444444)(58,3.27109444444444)(59,3.27155444444444)(60,3.27498222222222)(61,3.27845944444444)(62,3.27845944444444)(63,3.28101944444444)(64,3.29051833333333)(65,3.309955)(66,3.31170888888889)(67,3.31243888888889)(68,3.31272888888889)(69,3.31917833333333)(70,3.33168777777778)(71,3.33194777777778)(72,3.33420111111111)(73,3.33615611111111)(74,3.34650555555556)(75,3.34998555555556)(76,3.35087333333333)(77,3.35513777777778)(78,3.35630333333333)(79,3.35652)(80,3.37451833333333)(81,3.37922611111111)(82,3.37992722222222)(83,3.379995)(84,3.38730611111111)(85,3.38865277777778)(86,3.38869555555556)(87,3.39210944444444)(88,3.40282277777778)(89,3.40471444444445)(90,3.40945833333333)(91,3.40961833333333)(92,3.42168555555556)(93,3.42247611111111)(94,3.42641277777778)(95,3.42658388888889)(96,3.43416)(97,3.435695)(98,3.43924166666667)(99,3.43971833333333)(100,3.44775444444445) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (4,2.10512469137721)(4,2.43976419751168) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (8,2.34230666195167)(8,2.59967667138166) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (12,2.47226931784881)(12,2.69820401548453) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (16,2.57408595961971)(16,2.79222737371362) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (20,2.64619505366692)(20,2.85021494633308) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (24,2.76197982179132)(24,2.96560128931979) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (28,2.89449890475781)(28,3.08089665079775) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (32,2.93615582280169)(32,3.11642528830942) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (36,2.97602773813644)(36,3.15470226186356) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (40,3.02600368294288)(40,3.19364187261268) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (44,3.08353784802883)(44,3.25258770752673) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (48,3.16098769431107)(48,3.32877230568893) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (52,3.16972021064571)(52,3.32713645602095) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (56,3.18350562375032)(56,3.34454437624968) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (60,3.19521466772479)(60,3.35474977671965) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (64,3.21579398295185)(64,3.36524268371481) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (68,3.2385337246632)(68,3.38692405311458) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (72,3.26040958795667)(72,3.40799263426555) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (76,3.28023514984235)(76,3.42151151682432) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (80,3.30401712198955)(80,3.44501954467712) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (84,3.31757155216162)(84,3.4570406700606) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (88,3.33899656717376)(88,3.4666489883818) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (92,3.35792927893359)(92,3.48544183217753) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (96,3.37550681383931)(96,3.49281318616069) 
+};
+\addplot [
+color=mycolor5,
+solid,
+line width=1.0pt,
+forget plot
+]
+coordinates{
+ (100,3.38898172495087)(100,3.50652716393802) 
+};
+\end{axis}
+\end{tikzpicture}%
