@@ -1,7 +1,7 @@
 
-tasks  = {'boston'};
+tasks  = {'rocket'};
 %{'oka2','dtlz1a','gp_minushalf','gp_threequarters'};
-models  = {'indep','multitask'};
+models  = {'random','parego'};
 %{'indep','correl','multitask','parego','random'};
 
 
