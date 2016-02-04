@@ -58,7 +58,7 @@ xlabel('t')
 ylabel('Pareto Hypervolume')
 pv = [];
 for m=1:length(methods)
-    if m~=1 
+    if m~=6
         pv(m) = plot(means{m}(1:100), 'LineWidth', 1.2, 'Color', colors{m});
         for i=1:100
            low  = means{m}(i) - stds{m}(i); 
@@ -75,6 +75,6 @@ r2=get(gca,'ytick');
 gridxy(r1(2:end),r2(2:end),'color',[.8 .8 .8],'linewidth',0.5)
 % legend(pv,'CEIPV-SLF','CEIPV-MT','IEIPV','ParEGO','Random','Location', 'SouthEast')
 % matlab2tikz('.tikz','height','75mm','width','55mm')
-% matlab2tikz('boston.tikz','height','65mm','width','55mm')
+% matlab2tikz('vlmop3.tikz','height','65mm','width','55mm')
 
  
